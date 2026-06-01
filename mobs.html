@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criaturas - Servidor de Ixaya</title>
+  <meta name="description" content="Mobs especiales que sueltan materiales esenciales para tu progresion.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Servidor de Ixaya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="bosses.html">Jefes</a></li>
+        <li class="nav-item"><a class="nav-link" href="mobs.html">Criaturas</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipment.html">Equipamiento</a></li>
+        <li class="nav-item"><a class="nav-link" href="progression.html">Progresion</a></li>
+        <li class="nav-item"><a class="nav-link" href="commands.html">Comandos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Criaturas del Servidor</h1>
+    <p class="lead">Mobs especiales que sueltan materiales esenciales para tu progresion.</p>
+  </div>
+</header>
+
+<section class="content-section container">
+
+  <h2 class="section-title">Criaturas del Overworld</h2>
+  <p class="section-subtitle">Farmea estos mobs para obtener materiales necesarios para las llaves de invocacion.</p>
+
+  <div class="row g-4">
+    
+    <!-- GUARDIA PODRIDO -->
+    <div class="col-md-6 col-lg-3 animate-on-scroll delay-1">
+      <div class="mob-card" id="guardia-podrido">
+        <h3 class="mob-name">Guardia Podrido</h3>
+        <div class="mob-type">Zombie | HP: 40 | Dano: 6</div>
+        <div class="text-center"><img src="img/guardia-podrido.png" alt="Guardia Podrido" class="img-fluid rounded mt-2 mb-2" style="max-height: 150px; object-fit: contain; width: 100%;"></div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Equip: Chainmail Helmet, Iron Sword</p>
+        
+        <table class="drop-table mb-3">
+          <thead>
+            <tr><th>Item</th><th>Cant.</th><th>Prob.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Rotten Flesh</td><td>1-2</td><td>100%</td></tr>
+            <tr><td>Iron Ingot</td><td>1</td><td>2.5%</td></tr>
+            <tr><td>Carrot / Potato</td><td>1</td><td>2.5%</td></tr>
+            <tr><td style="color: var(--rey-secondary); font-weight: bold;">Fragmento de Armadura Vieja</td><td>1</td><td class="drop-chance">85%</td></tr>
+          </tbody>
+        </table>
+        
+        <div style="font-size: 0.8rem; padding-top: 0.5rem; border-top: 1px solid var(--border-subtle);">
+          Material clave para: <a href="progression.html#herrero-4" class="text-decoration-none" style="color: var(--rey-primary);">Craneo Contagiado</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RASTREADOR MALDITO -->
+    <div class="col-md-6 col-lg-3 animate-on-scroll delay-2">
+      <div class="mob-card" id="rastreador-maldito">
+        <h3 class="mob-name">Rastreador Maldito</h3>
+        <div class="mob-type">Skeleton | HP: 35 | Dano: 5</div>
+        <div class="text-center"><img src="img/rastreador-maldito.png" alt="Rastreador Maldito" class="img-fluid rounded mt-2 mb-2" style="max-height: 150px; object-fit: contain; width: 100%;"></div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Equip: Leather Helmet, Bow</p>
+        
+        <table class="drop-table mb-3">
+          <thead>
+            <tr><th>Item</th><th>Cant.</th><th>Prob.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bone</td><td>1-2</td><td>100%</td></tr>
+            <tr><td>Arrow</td><td>1-2</td><td>100%</td></tr>
+            <tr><td style="color: var(--franco-secondary); font-weight: bold;">Astilla Maldita</td><td>1</td><td class="drop-chance">85%</td></tr>
+          </tbody>
+        </table>
+        
+        <div style="font-size: 0.8rem; padding-top: 0.5rem; border-top: 1px solid var(--border-subtle); margin-top: auto;">
+          Material clave para: <a href="progression.html#herrero-3" class="text-decoration-none" style="color: var(--franco-primary);">Hueso Tallado</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIERVO SOMBRIO -->
+    <div class="col-md-6 col-lg-3 animate-on-scroll delay-3">
+      <div class="mob-card" id="siervo-sombrio">
+        <h3 class="mob-name">Siervo Sombrio</h3>
+        <div class="mob-type">Wither Skeleton | HP: 50 | Dano: 8</div>
+        <div class="text-center"><img src="img/siervo-sombrio.png" alt="Siervo Sombrio" class="img-fluid rounded mt-2 mb-2" style="max-height: 150px; object-fit: contain; width: 100%;"></div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Equip: Stone Sword</p>
+        
+        <table class="drop-table mb-3">
+          <thead>
+            <tr><th>Item</th><th>Cant.</th><th>Prob.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wither Skull</td><td>1</td><td>2.5%</td></tr>
+            <tr><td>Coal / Bone</td><td>1-2</td><td>33%</td></tr>
+            <tr><td style="color: var(--sombra-secondary); font-weight: bold;">Ceniza Oscura</td><td>1</td><td class="drop-chance">85%</td></tr>
+          </tbody>
+        </table>
+        
+        <div style="font-size: 0.8rem; padding-top: 0.5rem; border-top: 1px solid var(--border-subtle); margin-top: auto;">
+          Material clave para: <a href="progression.html#herrero-2" class="text-decoration-none" style="color: var(--sombra-primary);">Craneo de la Penumbra</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ECO DEL VACIO -->
+    <div class="col-md-6 col-lg-3 animate-on-scroll delay-4">
+      <div class="mob-card" id="eco-del-vacio">
+        <h3 class="mob-name">Eco del Vacio</h3>
+        <div class="mob-type">Enderman | HP: 60 | Dano: 10</div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">Sin equipamiento visible.</p>
+        
+        <table class="drop-table mb-3">
+          <thead>
+            <tr><th>Item</th><th>Cant.</th><th>Prob.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ender Pearl</td><td>1</td><td>50%</td></tr>
+            <tr><td style="color: var(--vacio-secondary); font-weight: bold;">Polvo del Abismo</td><td>1</td><td class="drop-chance">85%</td></tr>
+          </tbody>
+        </table>
+        
+        <div style="font-size: 0.8rem; padding-top: 0.5rem; border-top: 1px solid var(--border-subtle); margin-top: auto;">
+          Material clave para: <a href="progression.html#herrero-5" class="text-decoration-none" style="color: var(--vacio-primary);">Ojo del Abismo</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="section-divider">
+
+  <h2 class="section-title">Criaturas del End</h2>
+  <p class="section-subtitle">Mobs que aparecen en el End, incluyendo los invocados por el Dragon.</p>
+
+  <div class="row g-4 justify-content-center">
+    
+    <!-- ENDERMAN CORRUPTO -->
+    <div class="col-md-6 col-lg-4 animate-on-scroll delay-1">
+      <div class="mob-card" id="enderman-corrupto">
+        <h3 class="mob-name">Enderman Corrupto</h3>
+        <div class="mob-type">Enderman | HP: 120 | Dano: 14</div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Habilidades: Aplica ceguera al atacar. 20% probabilidad de levitacion al atacar.</p>
+        
+        <table class="drop-table">
+          <thead>
+            <tr><th>Item</th><th>Cant.</th><th>Prob.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ender Pearl</td><td>2-4</td><td class="drop-chance guaranteed">100%</td></tr>
+            <tr><td>Polvo del Abismo</td><td>1</td><td class="drop-chance">50%</td></tr>
+            <tr><td>25 EXP</td><td>25</td><td class="drop-chance guaranteed">100%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- PHANTOM ABISAL -->
+    <div class="col-md-6 col-lg-4 animate-on-scroll delay-2">
+      <div class="mob-card" id="phantom-abisal">
+        <h3 class="mob-name">Phantom Abisal</h3>
+        <div class="mob-type">Phantom (T-10) | HP: 50 | Dano: 10</div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Habilidades: 30% probabilidad de lanzar al jugador por los aires al atacar.</p>
+        
+        <table class="drop-table">
+          <thead>
+            <tr><th>Item</th><th>Cant.</th><th>Prob.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Phantom Membrane</td><td>1-3</td><td class="drop-chance guaranteed">100%</td></tr>
+            <tr><td>Nucleo Distorsionado</td><td>1</td><td class="drop-chance">10%</td></tr>
+            <tr><td>35 EXP</td><td>35</td><td class="drop-chance guaranteed">100%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- GUARDIAN WITHER -->
+    <div class="col-md-6 col-lg-4 animate-on-scroll delay-3">
+      <div class="mob-card" id="guardian-wither">
+        <h3 class="mob-name">Guardian Wither</h3>
+        <div class="mob-type">Wither Skeleton | HP: 80 | Dano: 10</div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Habilidades: Aplica Wither al atacar.<br><br><em>Invocado por el <a href="bosses.html#ender-dragon" class="text-decoration-none" style="color: var(--dragon-primary);">Ender Dragon</a> durante sus fases.</em></p>
+        
+        <table class="drop-table">
+          <thead>
+            <tr><th>Item</th><th>Cant.</th><th>Prob.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wither Skull</td><td>1</td><td class="drop-chance">15%</td></tr>
+            <tr><td>50 EXP</td><td>50</td><td class="drop-chance guaranteed">100%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="footer-title">Servidor de Ixaya</h5>
+        <p class="footer-text">Tu aventura comienza aqui.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color: var(--text-secondary); font-weight: 600; margin-bottom: 0.75rem;">Navegacion</h6>
+        <ul class="footer-links">
+          <li><a href="bosses.html">Jefes</a></li>
+          <li><a href="mobs.html">Criaturas</a></li>
+          <li><a href="equipment.html">Equipamiento</a></li>
+          <li><a href="progression.html">Progresion</a></li>
+          <li><a href="commands.html">Comandos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <p class="footer-text">Java: ca2.holy.gg:26167</p>
+        <p class="footer-text">Bedrock: ca2.holy.gg | Puerto: 26167</p>
+        <p class="footer-text" style="margin-top: 0.5rem;">Version 26.1.2</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-bottom text-center">2026 Servidor de Ixaya. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

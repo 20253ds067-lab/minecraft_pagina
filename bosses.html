@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jefes - Servidor de Ixaya</title>
+  <meta name="description" content="Criaturas legendarias con habilidades devastadoras y recompensas unicas.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Servidor de Ixaya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="bosses.html">Jefes</a></li>
+        <li class="nav-item"><a class="nav-link" href="mobs.html">Criaturas</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipment.html">Equipamiento</a></li>
+        <li class="nav-item"><a class="nav-link" href="progression.html">Progresion</a></li>
+        <li class="nav-item"><a class="nav-link" href="commands.html">Comandos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Jefes del Servidor</h1>
+    <p class="lead">Criaturas legendarias con habilidades devastadoras y recompensas unicas.</p>
+  </div>
+</header>
+
+<section class="content-section container">
+
+  <!-- REY PODRIDO -->
+  <div class="boss-card rey animate-on-scroll mb-5" id="rey-podrido">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="boss-name">Rey Podrido</h2>
+        <div class="boss-type">TIPO: ZOMBIE</div>
+        <div class="text-center mb-4"><img src="img/rey-podrido.png" alt="Rey Podrido" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;"></div>
+        
+        <div class="health-bar-container">
+          <div class="health-bar rey" data-width="49"></div>
+        </div>
+        <div class="health-text">
+          <span>HP: 500</span>
+          <span>BossBar: Rojo, Rango 30</span>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-item">
+            <span class="stat-value text-danger">10</span>
+            <span class="stat-label">Dano</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">0.33</span>
+            <span class="stat-label">Velocidad</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Resist. Empuje</span>
+          </div>
+        </div>
+
+        <h4 class="mt-4 mb-3" style="font-size: 1rem; font-weight: 700;">Habilidades</h4>
+        <ul class="skill-list">
+          <li><span class="skill-icon"></span> Atraccion masiva: Atrae a todos los jugadores en 15 bloques (cada 6s)</li>
+          <li><span class="skill-icon"></span> Rugido del dragon: Sonido aterrador al atraer</li>
+          <li><span class="skill-icon"></span> Explosion periodica: Explosion cada 7.5s</li>
+          <li><span class="skill-icon"></span> Impacto de rayo: Rayo cada 10s</li>
+          <li><span class="skill-icon"></span> Aura de bruja: Particulas constantes</li>
+        </ul>
+        
+        <div class="mt-4">
+            <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 700;">Equipamiento:</span>
+            <span style="font-size: 0.85rem; color: var(--text-secondary); margin-left: 0.5rem;">Full Netherite + Netherite Axe</span>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Recompensas (Drops)</h4>
+        <div class="table-responsive">
+          <table class="drop-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Cant.</th>
+                <th>Prob.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4000 EXP</td>
+                <td>4000</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Netherite Scrap</td>
+                <td>2</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Golden Apple</td>
+                <td>12</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td style="color: var(--rey-secondary); font-weight: 600;">Esencia Podrida</td>
+                <td>1</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="mt-4 pt-4 border-top" style="border-color: var(--border-subtle) !important;">
+          <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.75rem;">Invocacion</h4>
+          <div class="invocation-flow">
+            <div class="invocation-step">Farm Guardia Podrido</div>
+            <div class="invocation-arrow">-></div>
+            <div class="invocation-step highlight"><a href="progression.html#herrero-4" class="text-warning text-decoration-none">Craneo Contagiado</a></div>
+            <div class="invocation-arrow">-></div>
+            <div class="invocation-step" style="border-color: var(--rey-primary); color: var(--rey-secondary);">Altar Podrido</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FRANCOTIRADOR MALDITO -->
+  <div class="boss-card franco animate-on-scroll mb-5" id="francotirador">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="boss-name">Francotirador Maldito</h2>
+        <div class="boss-type">TIPO: SKELETON</div>
+        <div class="text-center mb-4"><img src="img/francotirador.png" alt="Francotirador Maldito" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;"></div>
+        
+        <div class="health-bar-container">
+          <div class="health-bar franco" data-width="39"></div>
+        </div>
+        <div class="health-text">
+          <span>HP: 400</span>
+          <span>BossBar: Azul, Rango 30</span>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-item">
+            <span class="stat-value text-danger">25</span>
+            <span class="stat-label">Dano</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">0.35</span>
+            <span class="stat-label">Velocidad</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">80%</span>
+            <span class="stat-label">Resist. Empuje</span>
+          </div>
+        </div>
+
+        <h4 class="mt-4 mb-3" style="font-size: 1rem; font-weight: 700;">Habilidades</h4>
+        <ul class="skill-list">
+          <li><span class="skill-icon"></span> Teletransporte al objetivo: Se teletransporta al jugador cada 10s</li>
+          <li><span class="skill-icon"></span> Evasion: Al recibir dano, 40% de probabilidad de teletransportarse</li>
+          <li><span class="skill-icon"></span> Invisibilidad: Se vuelve invisible cada 8s</li>
+          <li><span class="skill-icon"></span> Invocacion de clones: Invoca 2 clones que duran 5s</li>
+          <li><span class="skill-icon"></span> Explosion al atacar: Explosion en el objetivo al hacer dano</li>
+          <li><span class="skill-icon"></span> Lluvia de flechas: Dispara 8 flechas en abanico cada 7s</li>
+          <li><span class="skill-icon"></span> Aura de dragon breath: Particulas constantes</li>
+        </ul>
+        
+        <div class="mt-4">
+            <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 700;">Equipamiento:</span>
+            <span style="font-size: 0.85rem; color: var(--text-secondary); margin-left: 0.5rem;">Chainmail Helmet, Leather Chest, Chainmail Legs, Leather Boots, Bow</span>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Recompensas (Drops)</h4>
+        <div class="table-responsive">
+          <table class="drop-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Cant.</th>
+                <th>Prob.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2500 EXP</td>
+                <td>2500</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Golden Apple</td>
+                <td>12</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td style="color: var(--franco-secondary); font-weight: 600;">Esencia Maldita</td>
+                <td>1</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Netherite Scrap</td>
+                <td>2</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="mt-4 pt-4 border-top" style="border-color: var(--border-subtle) !important;">
+          <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.75rem;">Invocacion</h4>
+          <div class="invocation-flow">
+            <div class="invocation-step highlight"><a href="progression.html#herrero-3" class="text-warning text-decoration-none">Ver como conseguir la llave</a></div>
+            <div class="invocation-arrow">-></div>
+            <div class="invocation-step" style="border-color: var(--franco-primary); color: var(--franco-secondary);">Altar Maldito</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOMBRA MORTAL -->
+  <div class="boss-card sombra animate-on-scroll mb-5" id="sombra-mortal">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="boss-name">Sombra Mortal</h2>
+        <div class="boss-type">TIPO: WITHER SKELETON</div>
+        <div class="text-center mb-4"><img src="img/sombra-mortal.png" alt="Sombra Mortal" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;"></div>
+        
+        <div class="health-bar-container">
+          <div class="health-bar sombra" data-width="73"></div>
+        </div>
+        <div class="health-text">
+          <span>HP: 750</span>
+          <span>BossBar: Blanco, Rango 30</span>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-item">
+            <span class="stat-value text-danger">12</span>
+            <span class="stat-label">Dano</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">0.42</span>
+            <span class="stat-label">Velocidad</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Resist. Empuje</span>
+          </div>
+        </div>
+
+        <h4 class="mt-4 mb-3" style="font-size: 1rem; font-weight: 700;">Habilidades</h4>
+        <ul class="skill-list">
+          <li><span class="skill-icon"></span> PERMANENTEMENTE INVISIBLE: No se puede ver, solo por particulas</li>
+          <li><span class="skill-icon"></span> Ceguera al atacar: Aplica ceguera 3s al golpear</li>
+          <li><span class="skill-icon"></span> Wither al atacar: Aplica efecto Wither 3s al golpear</li>
+          <li><span class="skill-icon"></span> Teletransporte: Se teletransporta al objetivo cada 6s</li>
+          <li><span class="skill-icon"></span> Rayo y sonido: Rayo + sonido de Wither al teletransportarse</li>
+          <li><span class="skill-icon"></span> Aura de humo: Particulas de humo constantes</li>
+        </ul>
+        
+        <div class="mt-4">
+            <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 700;">Equipamiento:</span>
+            <span style="font-size: 0.85rem; color: var(--text-secondary); margin-left: 0.5rem;">Diamond Helmet, Diamond Boots, Netherite Sword</span>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Recompensas (Drops)</h4>
+        <div class="table-responsive">
+          <table class="drop-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Cant.</th>
+                <th>Prob.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5000 EXP</td>
+                <td>5000</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Golden Apple</td>
+                <td>12</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Wither Skull</td>
+                <td>1</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Netherite Scrap</td>
+                <td>2</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td style="color: var(--sombra-secondary); font-weight: 600;">Esencia Mortal</td>
+                <td>1</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="mt-4 pt-4 border-top" style="border-color: var(--border-subtle) !important;">
+          <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.75rem;">Invocacion</h4>
+          <div class="invocation-flow">
+            <div class="invocation-step highlight"><a href="progression.html#herrero-2" class="text-warning text-decoration-none">Ver como conseguir la llave</a></div>
+            <div class="invocation-arrow">-></div>
+            <div class="invocation-step" style="border-color: var(--sombra-primary); color: var(--sombra-secondary);">Altar de Sombra</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAMINANTE DEL VACIO -->
+  <div class="boss-card vacio animate-on-scroll mb-5" id="caminante-vacio">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="boss-name">Caminante del Vacio</h2>
+        <div class="boss-type">TIPO: ENDERMAN</div>
+        <div class="text-center mb-4"><img src="img/caminante-vacio.png" alt="Caminante del Vacio" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;"></div>
+        
+        <div class="health-bar-container">
+          <div class="health-bar vacio" data-width="59"></div>
+        </div>
+        <div class="health-text">
+          <span>HP: 600</span>
+          <span>BossBar: Morado, Rango 30</span>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-item">
+            <span class="stat-value text-danger">15</span>
+            <span class="stat-label">Dano</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">0.38</span>
+            <span class="stat-label">Velocidad</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">50%</span>
+            <span class="stat-label">Resist. Empuje</span>
+          </div>
+        </div>
+
+        <h4 class="mt-4 mb-3" style="font-size: 1rem; font-weight: 700;">Habilidades</h4>
+        <ul class="skill-list">
+          <li><span class="skill-icon"></span> Teletransporte con estilo: Se teletransporta al objetivo con particulas y sonido cada 5s</li>
+          <li><span class="skill-icon"></span> Ceguera al atacar: Aplica ceguera + particulas de tinta al golpear</li>
+          <li><span class="skill-icon"></span> Lanzamiento supremo: Lanza al jugador por los aires cada 7.5s</li>
+          <li><span class="skill-icon"></span> Aura de portales: Particulas de portal y encantamiento constantes</li>
+          <li><span class="skill-icon"></span> Inestabilidad al recibir dano: Particulas y gritos al recibir dano (50% y 20%)</li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Recompensas (Drops)</h4>
+        <div class="table-responsive">
+          <table class="drop-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Cant.</th>
+                <th>Prob.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3500 EXP</td>
+                <td>3500</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Golden Apple</td>
+                <td>12</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Ender Pearl</td>
+                <td>2-4</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td>Netherite Scrap</td>
+                <td>2</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td style="color: var(--vacio-secondary); font-weight: 600;">Esencia del Vacio</td>
+                <td>1</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="mt-4 pt-4 border-top" style="border-color: var(--border-subtle) !important;">
+          <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.75rem;">Invocacion</h4>
+          <div class="invocation-flow">
+            <div class="invocation-step highlight"><a href="progression.html#herrero-5" class="text-warning text-decoration-none">Ver como conseguir la llave</a></div>
+            <div class="invocation-arrow">-></div>
+            <div class="invocation-step" style="border-color: var(--vacio-primary); color: var(--vacio-secondary);">Altar del Vacio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENDER DRAGON INMORTAL -->
+  <div class="boss-card dragon animate-on-scroll mb-5" id="ender-dragon">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="boss-name">Ender Dragon Inmortal</h2>
+        <div class="boss-type">TIPO: ENDER DRAGON (VANILLA OVERRIDE)</div>
+        <div class="text-center mb-4"><img src="img/ender-dragon.png" alt="Ender Dragon Inmortal" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;"></div>
+        
+        <div class="health-bar-container">
+          <div class="health-bar dragon" data-width="100"></div>
+        </div>
+        <div class="health-text">
+          <span>HP: 1024</span>
+          <span>BossBar: Rosa</span>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-item">
+            <span class="stat-value text-danger">25</span>
+            <span class="stat-label">Dano Base</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value text-success">75%</span>
+            <span class="stat-label">Reduccion de Dano</span>
+          </div>
+        </div>
+
+        <h4 class="mt-4 mb-3" style="font-size: 1rem; font-weight: 700;">Habilidades Base</h4>
+        <ul class="skill-list">
+          <li><span class="skill-icon"></span> Aliento de fuego: Llamaradas en area cada 10s</li>
+          <li><span class="skill-icon"></span> Dano en area: 10 de dano a jugadores en 15 bloques</li>
+          <li><span class="skill-icon"></span> Rayo: Rayo en el objetivo cada 12s</li>
+          <li><span class="skill-icon"></span> Succion abisal: Atrae a jugadores en 40 bloques cada 30s</li>
+          <li><span class="skill-icon"></span> Ceguera oscura: Ciega a todos en 40 bloques cada 20s</li>
+          <li><span class="skill-icon"></span> Aliento putrefacto: Aplica Wither a todos en 30 bloques cada 25s</li>
+        </ul>
+
+        <h4 class="mt-4 mb-3" style="font-size: 1rem; font-weight: 700;">Fases de Combate</h4>
+        <div class="phase-card" style="border-color: var(--warning);">
+          <div class="phase-name text-warning">Fase 2 (75% HP / 768 HP)</div>
+          <div class="phase-trigger">"Un ejercito de Phantoms acude al llamado del Dragon!"</div>
+          <div class="phase-desc">Invoca 6 Phantom Abisal y 3 Enderman Corrupto.</div>
+        </div>
+        <div class="phase-card" style="border-color: var(--danger);">
+          <div class="phase-name text-danger">Fase 3 (50% HP / 512 HP)</div>
+          <div class="phase-trigger">"Los Guardianes Wither se levantan de sus tumbas!"</div>
+          <div class="phase-desc">Invoca 8 Guardian Wither y 4 Phantom Abisal.</div>
+        </div>
+        <div class="phase-card" style="border-color: var(--rey-primary);">
+          <div class="phase-name" style="color: var(--rey-primary);">Fase Final (25% HP / 256 HP)</div>
+          <div class="phase-trigger text-uppercase fw-bold" style="color: var(--rey-primary);">"EL DRAGON ENTRA EN FURIA TOTAL, NO HAY ESCAPE!"</div>
+          <div class="phase-desc">Invoca 10 Phantom Abisal, 6 Guardian Wither y 5 Enderman Corrupto. Rayo y sonido de muerte continuos.</div>
+        </div>
+
+      </div>
+      
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Recompensas (Drops)</h4>
+        <div class="table-responsive">
+          <table class="drop-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Cant.</th>
+                <th>Prob.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000 EXP</td>
+                <td>2000</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+              <tr>
+                <td style="color: var(--dragon-secondary); font-weight: 600;">Corazon del Abismo</td>
+                <td>1</td>
+                <td class="drop-chance guaranteed">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="mt-4 pt-4 border-top" style="border-color: var(--border-subtle) !important;">
+          <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.75rem;">Invocacion y Usos</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Se invoca de forma normal usando Cristales del End.</p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">El <strong style="color: var(--dragon-secondary);">Corazon del Abismo</strong> es el material clave para forjar el <a href="equipment.html#filo-del-caos" class="text-decoration-none">Filo del Caos</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="footer-title">Servidor de Ixaya</h5>
+        <p class="footer-text">Tu aventura comienza aqui.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color: var(--text-secondary); font-weight: 600; margin-bottom: 0.75rem;">Navegacion</h6>
+        <ul class="footer-links">
+          <li><a href="bosses.html">Jefes</a></li>
+          <li><a href="mobs.html">Criaturas</a></li>
+          <li><a href="equipment.html">Equipamiento</a></li>
+          <li><a href="progression.html">Progresion</a></li>
+          <li><a href="commands.html">Comandos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <p class="footer-text">Java: ca2.holy.gg:26167</p>
+        <p class="footer-text">Bedrock: ca2.holy.gg | Puerto: 26167</p>
+        <p class="footer-text" style="margin-top: 0.5rem;">Version 26.1.2</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-bottom text-center">2026 Servidor de Ixaya. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progresion - Servidor de Ixaya</title>
+  <meta name="description" content="Todo se obtiene a traves de Herreros ubicados en el Spawn. No hay recetas de crafteo.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Servidor de Ixaya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="bosses.html">Jefes</a></li>
+        <li class="nav-item"><a class="nav-link" href="mobs.html">Criaturas</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipment.html">Equipamiento</a></li>
+        <li class="nav-item"><a class="nav-link" href="progression.html">Progresion</a></li>
+        <li class="nav-item"><a class="nav-link" href="commands.html">Comandos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Sistema de Progresion</h1>
+    <p class="lead">Todo se obtiene a traves de Herreros ubicados en el Spawn. No hay recetas de crafteo.</p>
+  </div>
+</header>
+
+<section class="content-section container">
+
+  <div class="info-box animate-on-scroll">
+    <div class="info-box-icon">!</div>
+    <p>Todos los intercambios se realizan con los Herreros del Spawn. Los aldeanos vanilla estan deshabilitados. Cada herrero ofrece hasta 3 trades.</p>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-lg-8 offset-lg-2">
+
+      <!-- HERRERO 1 -->
+      <div class="trade-card animate-on-scroll" id="herrero-1">
+        <div class="trade-header">
+          <div class="trade-number" style="background: var(--sombra-bg); color: var(--sombra-secondary); border-color: rgba(173, 181, 189, 0.3);">1</div>
+          <div>
+            <div class="trade-name">Artesano Ancestral</div>
+            <div class="trade-desc">Libro de Reparacion</div>
+          </div>
+        </div>
+        
+        <div class="trade-row">
+          <div class="trade-row-num">T1</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Cabeza de Wither</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">10 Membrana de Phantom</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Libro de Reparacion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERRERO 2 -->
+      <div class="trade-card animate-on-scroll" id="herrero-2">
+        <div class="trade-header">
+          <div class="trade-number" style="background: var(--sombra-bg); color: var(--sombra-secondary); border-color: rgba(173, 181, 189, 0.3);">2</div>
+          <div>
+            <div class="trade-name">Herrero de la Penumbra</div>
+            <div class="trade-desc">Linea de la Sombra Mortal</div>
+          </div>
+        </div>
+        
+        <div class="trade-row">
+          <div class="trade-row-num">T1</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Lingote de Netherite</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">1 Esencia Mortal</span>
+            <span class="trade-arrow">-></span>
+            <a href="equipment.html#peto-vitalidad" class="text-decoration-none"><span class="trade-item result">Peto de la Vitalidad</span></a>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T2</div>
+          <div class="trade-input">
+            <span class="trade-item">64 Carbon</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">64 Carbon</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">1 Carbon Umbrio</span>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T3</div>
+          <div class="trade-input">
+            <span class="trade-item">10 Carbon Umbrio</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">32 Ceniza Oscura</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Craneo de la Penumbra</span>
+          </div>
+          <div class="w-100 ps-4 ms-2 mt-1" style="font-size: 0.75rem; color: var(--text-muted);">Llave para invocar a la <a href="bosses.html#sombra-mortal" style="color: var(--sombra-secondary);">Sombra Mortal</a></div>
+        </div>
+      </div>
+
+      <!-- HERRERO 3 -->
+      <div class="trade-card animate-on-scroll" id="herrero-3">
+        <div class="trade-header">
+          <div class="trade-number" style="background: var(--franco-bg); color: var(--franco-secondary); border-color: rgba(72, 149, 239, 0.3);">3</div>
+          <div>
+            <div class="trade-name">Forjador de Huesos</div>
+            <div class="trade-desc">Linea del Francotirador Maldito</div>
+          </div>
+        </div>
+        
+        <div class="trade-row">
+          <div class="trade-row-num">T1</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Lingote de Netherite</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">1 Esencia Maldita</span>
+            <span class="trade-arrow">-></span>
+            <a href="equipment.html#grebas-agilidad" class="text-decoration-none"><span class="trade-item result">Grebas de la Agilidad</span></a>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T2</div>
+          <div class="trade-input">
+            <span class="trade-item">128 Huesos (2 stacks)</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">1 Hueso Denso</span>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T3</div>
+          <div class="trade-input">
+            <span class="trade-item">10 Hueso Denso</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">64 Astilla Maldita</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Hueso Tallado</span>
+          </div>
+          <div class="w-100 ps-4 ms-2 mt-1" style="font-size: 0.75rem; color: var(--text-muted);">Llave para invocar al <a href="bosses.html#francotirador" style="color: var(--franco-secondary);">Francotirador Maldito</a></div>
+        </div>
+      </div>
+
+      <!-- HERRERO 4 -->
+      <div class="trade-card animate-on-scroll" id="herrero-4">
+        <div class="trade-header">
+          <div class="trade-number" style="background: var(--rey-bg); color: var(--rey-secondary); border-color: rgba(230, 57, 70, 0.3);">4</div>
+          <div>
+            <div class="trade-name">Herrero de la Guardia</div>
+            <div class="trade-desc">Linea del Rey Podrido</div>
+          </div>
+        </div>
+        
+        <div class="trade-row">
+          <div class="trade-row-num">T1</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Lingote de Netherite</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">1 Esencia Podrida</span>
+            <span class="trade-arrow">-></span>
+            <a href="equipment.html#corona-del-rey" class="text-decoration-none"><span class="trade-item result">Corona del Rey</span></a>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T2</div>
+          <div class="trade-input">
+            <span class="trade-item">128 Carne de Zombie (2 stacks)</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">1 Masa Podrida Concentrada</span>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T3</div>
+          <div class="trade-input">
+            <span class="trade-item">10 Masa Concentrada</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">64 Fragmento de Armadura Vieja</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Craneo Contagiado</span>
+          </div>
+          <div class="w-100 ps-4 ms-2 mt-1" style="font-size: 0.75rem; color: var(--text-muted);">Llave para invocar al <a href="bosses.html#rey-podrido" style="color: var(--rey-secondary);">Rey Podrido</a></div>
+        </div>
+      </div>
+
+      <!-- HERRERO 5 -->
+      <div class="trade-card animate-on-scroll" id="herrero-5">
+        <div class="trade-header">
+          <div class="trade-number" style="background: var(--vacio-bg); color: var(--vacio-secondary); border-color: rgba(123, 47, 247, 0.3);">5</div>
+          <div>
+            <div class="trade-name">Oraculo del Abismo</div>
+            <div class="trade-desc">Linea del Caminante del Vacio</div>
+          </div>
+        </div>
+        
+        <div class="trade-row">
+          <div class="trade-row-num">T1</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Lingote de Netherite</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">1 Esencia del Vacio</span>
+            <span class="trade-arrow">-></span>
+            <a href="equipment.html#botas-abismo" class="text-decoration-none"><span class="trade-item result">Botas del Abismo</span></a>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T2</div>
+          <div class="trade-input">
+            <span class="trade-item">16 Perlas de Ender</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">16 Perlas de Ender</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">1 Nucleo Distorsionado</span>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T3</div>
+          <div class="trade-input">
+            <span class="trade-item">10 Nucleo Distorsionado</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">64 Polvo del Abismo</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Ojo del Abismo</span>
+          </div>
+          <div class="w-100 ps-4 ms-2 mt-1" style="font-size: 0.75rem; color: var(--text-muted);">Llave para invocar al <a href="bosses.html#caminante-vacio" style="color: var(--vacio-secondary);">Caminante del Vacio</a></div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <h2 class="section-title text-center mt-5 mb-2">Forja Avanzada</h2>
+      <p class="section-subtitle text-center mb-5">Trades para fabricar los componentes del Filo del Caos.</p>
+
+      <!-- HERRERO 6 -->
+      <div class="trade-card animate-on-scroll" id="herrero-6">
+        <div class="trade-header">
+          <div class="trade-number" style="background: var(--dragon-bg); color: var(--dragon-secondary); border-color: rgba(224, 64, 160, 0.3);">6</div>
+          <div>
+            <div class="trade-name">Alquimista de Esencias</div>
+            <div class="trade-desc">Componente: Ojo del Apocalipsis</div>
+          </div>
+        </div>
+        
+        <div class="trade-row">
+          <div class="trade-row-num">T1</div>
+          <div class="trade-input">
+            <span class="trade-item">2 Esencia Maldita</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">2 Esencia Mortal</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">1 Fragmento de Ojo</span>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T2</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Bloque de Netherite</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">2 Esencia Podrida</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Sello de Netherite Impuro</span>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T3</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Sello de Netherite Impuro</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">1 Fragmento de Ojo</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Ojo del Apocalipsis</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERRERO 7 -->
+      <div class="trade-card animate-on-scroll" id="herrero-7">
+        <div class="trade-header">
+          <div class="trade-number" style="background: var(--dragon-bg); color: var(--dragon-secondary); border-color: rgba(224, 64, 160, 0.3);">7</div>
+          <div>
+            <div class="trade-name">Tejedor del Vacio</div>
+            <div class="trade-desc">Componente: Esfera del Vacio</div>
+          </div>
+        </div>
+        
+        <div class="trade-row">
+          <div class="trade-row-num">T1</div>
+          <div class="trade-input">
+            <span class="trade-item">10 Nucleo Distorsionado</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">40 Polvo del Abismo</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Esencia Comprimida</span>
+          </div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T2</div>
+          <div class="trade-input">
+            <span class="trade-item">2 Esencia del Vacio</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">1 Corazon del Abismo</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Nucleo del Fin Estabilizado</span>
+          </div>
+          <div class="w-100 ps-4 ms-2 mt-1" style="font-size: 0.75rem; color: var(--text-muted);">Corazon del Abismo: drop del <a href="bosses.html#ender-dragon" style="color: var(--dragon-secondary);">Ender Dragon</a></div>
+        </div>
+        <div class="trade-row">
+          <div class="trade-row-num">T3</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Esencia Comprimida</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">1 Nucleo del Fin Estabilizado</span>
+            <span class="trade-arrow">-></span>
+            <span class="trade-item result">Esfera del Vacio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERRERO 8 -->
+      <div class="trade-card animate-on-scroll" id="herrero-8" style="border-color: rgba(240, 192, 64, 0.3); background: linear-gradient(135deg, var(--bg-card), var(--bg-card-hover));">
+        <div class="trade-header">
+          <div class="trade-number" style="background: rgba(240, 192, 64, 0.1); color: var(--gold); border-color: rgba(240, 192, 64, 0.3);">8</div>
+          <div>
+            <div class="trade-name" style="color: var(--gold);">Maestro Forjador</div>
+            <div class="trade-desc">El trade final</div>
+          </div>
+        </div>
+        
+        <div class="trade-row border-0">
+          <div class="trade-row-num text-warning">T1</div>
+          <div class="trade-input">
+            <span class="trade-item">1 Esfera del Vacio</span>
+            <span class="trade-plus">+</span>
+            <span class="trade-item">1 Ojo del Apocalipsis</span>
+            <span class="trade-arrow text-warning">-></span>
+            <a href="equipment.html#filo-del-caos" class="text-decoration-none"><span class="trade-item legendary">Filo del Caos</span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="footer-title">Servidor de Ixaya</h5>
+        <p class="footer-text">Tu aventura comienza aqui.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color: var(--text-secondary); font-weight: 600; margin-bottom: 0.75rem;">Navegacion</h6>
+        <ul class="footer-links">
+          <li><a href="bosses.html">Jefes</a></li>
+          <li><a href="mobs.html">Criaturas</a></li>
+          <li><a href="equipment.html">Equipamiento</a></li>
+          <li><a href="progression.html">Progresion</a></li>
+          <li><a href="commands.html">Comandos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <p class="footer-text">Java: ca2.holy.gg:26167</p>
+        <p class="footer-text">Bedrock: ca2.holy.gg | Puerto: 26167</p>
+        <p class="footer-text" style="margin-top: 0.5rem;">Version 26.1.2</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-bottom text-center">2026 Servidor de Ixaya. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

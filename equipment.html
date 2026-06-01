@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipamiento - Servidor de Ixaya</title>
+  <meta name="description" content="Armadura y armas forjadas con el poder de los jefes del servidor.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Servidor de Ixaya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="bosses.html">Jefes</a></li>
+        <li class="nav-item"><a class="nav-link" href="mobs.html">Criaturas</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipment.html">Equipamiento</a></li>
+        <li class="nav-item"><a class="nav-link" href="progression.html">Progresion</a></li>
+        <li class="nav-item"><a class="nav-link" href="commands.html">Comandos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Equipamiento Legendario</h1>
+    <p class="lead">Armadura y armas forjadas con el poder de los jefes del servidor.</p>
+  </div>
+</header>
+
+<section class="content-section container">
+
+  <h2 class="section-title">Armadura Legendaria</h2>
+  <p class="section-subtitle">4 piezas de armadura con estadisticas unicas obtenidas derrotando a los jefes.</p>
+  <div class="text-center mb-5"><img src="img/armadura-legendaria.png" alt="Armadura Legendaria Completa" class="img-fluid rounded" style="max-height: 400px; object-fit: contain; border: 1px solid var(--border-subtle); box-shadow: 0 0 30px rgba(240,192,64,0.1);"></div>
+
+  <div class="row g-4 mb-5">
+    
+    <!-- CORONA DEL REY -->
+    <div class="col-md-6 col-lg-3 animate-on-scroll delay-1">
+      <div class="equip-card rey" id="corona-del-rey">
+        <div class="equip-slot">CASCO</div>
+        <h3 class="equip-name">Corona del Rey</h3>
+        <div class="equip-base">Base: Casco de Netherite</div>
+        <div class="equip-lore">"Forjada con los restos de un antiguo tirano."</div>
+        
+        <div class="equip-stat">
+          <span class="equip-stat-name">Max Vida</span>
+          <span class="equip-stat-value positive">+4 (+2 Corazones)</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Resist. Empuje</span>
+          <span class="equip-stat-value positive">+20%</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Armadura</span>
+          <span class="equip-stat-value gold">+4</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Dureza</span>
+          <span class="equip-stat-value gold">+4</span>
+        </div>
+        
+        <div class="equip-source">
+          <div><a href="progression.html#herrero-4" class="equip-link">Se obtiene del Herrero de la Guardia <span class="link-arrow">-></span></a></div>
+          <div class="mt-2" style="font-size: 0.75rem; color: var(--text-muted);">Requiere derrotar al <a href="bosses.html#rey-podrido" style="color: var(--rey-primary); text-decoration: none;">Rey Podrido</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PETO DE LA VITALIDAD -->
+    <div class="col-md-6 col-lg-3 animate-on-scroll delay-2">
+      <div class="equip-card sombra" id="peto-vitalidad">
+        <div class="equip-slot">PECHERA</div>
+        <h3 class="equip-name">Peto de la Vitalidad</h3>
+        <div class="equip-base">Base: Pechera de Netherite</div>
+        <div class="equip-lore">"Una armadura bendecida con esencias vivas."</div>
+        
+        <div class="equip-stat">
+          <span class="equip-stat-name">Max Vida</span>
+          <span class="equip-stat-value positive">+8 (+4 Corazones)</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Armadura</span>
+          <span class="equip-stat-value gold">+10</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Dureza</span>
+          <span class="equip-stat-value gold">+4</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Resist. Empuje</span>
+          <span class="equip-stat-value positive">+10%</span>
+        </div>
+        
+        <div class="equip-source">
+          <div><a href="progression.html#herrero-2" class="equip-link">Se obtiene del Herrero de la Penumbra <span class="link-arrow">-></span></a></div>
+          <div class="mt-2" style="font-size: 0.75rem; color: var(--text-muted);">Requiere derrotar a la <a href="bosses.html#sombra-mortal" style="color: var(--sombra-primary); text-decoration: none;">Sombra Mortal</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GREBAS DE LA AGILIDAD -->
+    <div class="col-md-6 col-lg-3 animate-on-scroll delay-3">
+      <div class="equip-card franco" id="grebas-agilidad">
+        <div class="equip-slot">PANTALONES</div>
+        <h3 class="equip-name">Grebas de la Agilidad</h3>
+        <div class="equip-base">Base: Pantalones de Netherite</div>
+        <div class="equip-lore">"Pantalones forjados con el viento de las sombras."</div>
+        
+        <div class="equip-stat">
+          <span class="equip-stat-name">Max Vida</span>
+          <span class="equip-stat-value positive">+4 (+2 Corazones)</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Vel. Movimiento</span>
+          <span class="equip-stat-value positive">+15%</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Armadura</span>
+          <span class="equip-stat-value gold">+7</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Dureza</span>
+          <span class="equip-stat-value gold">+4</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Resist. Empuje</span>
+          <span class="equip-stat-value positive">+10%</span>
+        </div>
+        
+        <div class="equip-source">
+          <div><a href="progression.html#herrero-3" class="equip-link">Se obtiene del Forjador de Huesos <span class="link-arrow">-></span></a></div>
+          <div class="mt-2" style="font-size: 0.75rem; color: var(--text-muted);">Requiere derrotar al <a href="bosses.html#francotirador" style="color: var(--franco-primary); text-decoration: none;">Francotirador Maldito</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTAS DEL ABISMO -->
+    <div class="col-md-6 col-lg-3 animate-on-scroll delay-4">
+      <div class="equip-card vacio" id="botas-abismo">
+        <div class="equip-slot">BOTAS</div>
+        <h3 class="equip-name">Botas del Abismo</h3>
+        <div class="equip-base">Base: Botas de Netherite</div>
+        <div class="equip-lore">"Forjadas con la energia de los jefes."</div>
+        
+        <div class="equip-stat">
+          <span class="equip-stat-name">Max Vida</span>
+          <span class="equip-stat-value positive">+4 (+2 Corazones)</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Armadura</span>
+          <span class="equip-stat-value gold">+5</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Dureza</span>
+          <span class="equip-stat-value gold">+4</span>
+        </div>
+        <div class="equip-stat">
+          <span class="equip-stat-name">Resist. Empuje</span>
+          <span class="equip-stat-value positive">+10%</span>
+        </div>
+        
+        <div class="equip-source">
+          <div><a href="progression.html#herrero-5" class="equip-link">Se obtiene del Oraculo del Abismo <span class="link-arrow">-></span></a></div>
+          <div class="mt-2" style="font-size: 0.75rem; color: var(--text-muted);">Requiere derrotar al <a href="bosses.html#caminante-vacio" style="color: var(--vacio-primary); text-decoration: none;">Caminante del Vacio</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SET TOTAL STATS -->
+  <div class="set-total animate-on-scroll" id="set-completo">
+    <h3 class="set-total-title">Estadisticas del Set Completo</h3>
+    <div class="stat-grid">
+      <div class="stat-item">
+        <span class="stat-value text-success">+20 (+10 Corazones)</span>
+        <span class="stat-label">Max Vida</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value text-success">+50%</span>
+        <span class="stat-label">Resist. Empuje</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value text-warning">+26</span>
+        <span class="stat-label">Armadura Total</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value text-warning">+16</span>
+        <span class="stat-label">Dureza Total</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value text-success">+15%</span>
+        <span class="stat-label">Vel. Movimiento</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <h2 class="section-title">Arma Legendaria</h2>
+  
+  <div class="row mt-4">
+    <div class="col-lg-8 offset-lg-2 animate-on-scroll">
+      <!-- FILO DEL CAOS -->
+      <div class="equip-card dragon" id="filo-del-caos">
+        <div class="equip-slot">ARMA</div>
+        <h3 class="equip-name" style="font-size: 1.8rem;">Filo del Caos</h3>
+        <div class="equip-base">Base: Espada de Netherite</div>
+        <div class="equip-lore">"Forjada con las almas de los tiranos del mundo y el mismisimo corazon del vacio."</div>
+        <div class="text-center mt-3 mb-4"><img src="img/filo-caos.png" alt="Filo del Caos" class="img-fluid rounded" style="max-height: 300px; object-fit: contain;"></div>
+        
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.75rem;">Estadisticas Principales</h4>
+            <div class="equip-stat">
+              <span class="equip-stat-name">Dano de Ataque</span>
+              <span class="equip-stat-value positive">+18</span>
+            </div>
+            <div class="equip-stat">
+              <span class="equip-stat-name">Vel. de Ataque</span>
+              <span class="equip-stat-value positive">+3.0</span>
+            </div>
+            <div class="equip-stat">
+              <span class="equip-stat-name">Prob. de Rayo</span>
+              <span class="equip-stat-value positive">15%</span>
+            </div>
+          </div>
+          
+          <div class="col-md-6 border-start border-md-start" style="border-color: var(--border-subtle) !important;">
+            <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.75rem;">Encantamientos Ocultos</h4>
+            <ul class="enchant-list">
+              <li><div class="enchant-dot"></div> Filo X (Dano general)</li>
+              <li><div class="enchant-dot"></div> Castigo X (Dano extra a no-muertos)</li>
+              <li><div class="enchant-dot"></div> Perdicion de Artropodos X (Dano extra a aranas)</li>
+              <li><div class="enchant-dot"></div> Aspecto Igneo V (Fuego duradero)</li>
+              <li><div class="enchant-dot"></div> Saqueo V (Mas drops)</li>
+              <li><div class="enchant-dot"></div> Filo Arrasador V (Dano en area)</li>
+              <li><div class="enchant-dot"></div> Empuje III (Knockback)</li>
+              <li><div class="enchant-dot"></div> Irrompibilidad X</li>
+              <li><div class="enchant-dot"></div> Reparacion I</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="equip-source mt-4">
+          <div><a href="progression.html#herrero-8" class="equip-link" style="color: var(--dragon-primary);">Se obtiene del Maestro Forjador <span class="link-arrow">-></span></a></div>
+          <div class="mt-2" style="font-size: 0.75rem; color: var(--text-muted);">Requiere materiales de TODOS los jefes y el <a href="progression.html#herrero-8" style="color: var(--text-secondary);">Ender Dragon</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="footer-title">Servidor de Ixaya</h5>
+        <p class="footer-text">Tu aventura comienza aqui.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color: var(--text-secondary); font-weight: 600; margin-bottom: 0.75rem;">Navegacion</h6>
+        <ul class="footer-links">
+          <li><a href="bosses.html">Jefes</a></li>
+          <li><a href="mobs.html">Criaturas</a></li>
+          <li><a href="equipment.html">Equipamiento</a></li>
+          <li><a href="progression.html">Progresion</a></li>
+          <li><a href="commands.html">Comandos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <p class="footer-text">Java: ca2.holy.gg:26167</p>
+        <p class="footer-text">Bedrock: ca2.holy.gg | Puerto: 26167</p>
+        <p class="footer-text" style="margin-top: 0.5rem;">Version 26.1.2</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-bottom text-center">2026 Servidor de Ixaya. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Servidor de Ixaya</title>
+  <meta name="description" content="Servidor de Ixaya. Derrota jefes legendarios y forja equipamiento increible.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Servidor de Ixaya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="bosses.html">Jefes</a></li>
+        <li class="nav-item"><a class="nav-link" href="mobs.html">Criaturas</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipment.html">Equipamiento</a></li>
+        <li class="nav-item"><a class="nav-link" href="progression.html">Progresion</a></li>
+        <li class="nav-item"><a class="nav-link" href="commands.html">Comandos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Servidor de Ixaya</h1>
+    <p class="hero-subtitle">Derrota jefes legendarios, recolecta materiales unicos y forja el equipamiento mas poderoso del servidor.</p>
+    
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <div class="ip-display">
+        <span class="ip-label">JAVA</span>
+        <span class="ip-value">ca2.holy.gg:26167</span>
+        <span class="ip-copy">Copiar</span>
+      </div>
+      <div class="ip-display flex-column align-items-center">
+        <div class="d-flex align-items-center gap-2">
+            <span class="ip-label">BEDROCK</span>
+            <span class="ip-value">ca2.holy.gg</span>
+            <span class="ip-copy">Copiar</span>
+        </div>
+        <small style="color: var(--text-muted); font-weight: 600;">Puerto: 26167</small>
+      </div>
+    </div>
+    
+    <p class="hero-version">VERSION 26.1.2</p>
+  </div>
+</section>
+
+<section class="content-section bg-surface">
+  <div class="container">
+    <div class="stat-grid animate-on-scroll">
+      <div class="stat-item">
+        <span class="stat-value">5</span>
+        <span class="stat-label">Jefes</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">8+</span>
+        <span class="stat-label">Criaturas</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">4</span>
+        <span class="stat-label">Piezas de Armadura</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">1</span>
+        <span class="stat-label">Arma Legendaria</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section container">
+  <h2 class="section-title text-center">Explora la Guia</h2>
+  <p class="section-subtitle text-center">Todo lo que necesitas saber para dominar el servidor.</p>
+  
+  <div class="row g-4 mt-2 justify-content-center">
+    <div class="col-md-4 col-lg animate-on-scroll delay-1">
+      <a href="bosses.html" class="nav-card" style="border-color: var(--rey-primary);">
+        <div class="nav-card-icon" style="background: var(--rey-bg); color: var(--rey-primary);">J</div>
+        <h3 class="nav-card-title">Jefes</h3>
+        <p class="nav-card-desc">5 jefes con habilidades unicas, fases y recompensas epicas.</p>
+        <div class="nav-card-count">5</div>
+        <div class="nav-card-count-label">Jefes de mundo</div>
+      </a>
+    </div>
+    <div class="col-md-4 col-lg animate-on-scroll delay-2">
+      <a href="mobs.html" class="nav-card">
+        <div class="nav-card-icon" style="background: var(--vacio-bg); color: var(--vacio-primary);">C</div>
+        <h3 class="nav-card-title">Criaturas</h3>
+        <p class="nav-card-desc">Mobs especiales que sueltan materiales clave para tu progresion.</p>
+        <div class="nav-card-count">8+</div>
+        <div class="nav-card-count-label">Criaturas unicas</div>
+      </a>
+    </div>
+    <div class="col-md-4 col-lg animate-on-scroll delay-3">
+      <a href="equipment.html" class="nav-card">
+        <div class="nav-card-icon" style="background: rgba(240, 192, 64, 0.1); color: var(--gold);">E</div>
+        <h3 class="nav-card-title">Equipamiento</h3>
+        <p class="nav-card-desc">Armadura legendaria y el Filo del Caos, la espada definitiva.</p>
+        <div class="nav-card-count">5</div>
+        <div class="nav-card-count-label">Piezas de equipo</div>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg animate-on-scroll delay-4">
+      <a href="progression.html" class="nav-card">
+        <div class="nav-card-icon" style="background: var(--franco-bg); color: var(--franco-primary);">P</div>
+        <h3 class="nav-card-title">Progresion</h3>
+        <p class="nav-card-desc">8 herreros con trades para obtener todo el equipamiento.</p>
+        <div class="nav-card-count">8</div>
+        <div class="nav-card-count-label">Herreros</div>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg animate-on-scroll delay-5">
+      <a href="commands.html" class="nav-card">
+        <div class="nav-card-icon" style="background: var(--sombra-bg); color: var(--sombra-secondary);">CMD</div>
+        <h3 class="nav-card-title">Comandos</h3>
+        <p class="nav-card-desc">Comandos de clanes, teleportacion y utilidades del servidor.</p>
+        <div class="nav-card-count"></div>
+        <div class="nav-card-count-label">Utilidades</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="footer-title">Servidor de Ixaya</h5>
+        <p class="footer-text">Tu aventura comienza aqui.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color: var(--text-secondary); font-weight: 600; margin-bottom: 0.75rem;">Navegacion</h6>
+        <ul class="footer-links">
+          <li><a href="bosses.html">Jefes</a></li>
+          <li><a href="mobs.html">Criaturas</a></li>
+          <li><a href="equipment.html">Equipamiento</a></li>
+          <li><a href="progression.html">Progresion</a></li>
+          <li><a href="commands.html">Comandos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <p class="footer-text">Java: ca2.holy.gg:26167</p>
+        <p class="footer-text">Bedrock: ca2.holy.gg | Puerto: 26167</p>
+        <p class="footer-text" style="margin-top: 0.5rem;">Version 26.1.2</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-bottom text-center">2026 Servidor de Ixaya. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

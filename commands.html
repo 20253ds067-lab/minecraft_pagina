@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comandos - Servidor de Ixaya</title>
+  <meta name="description" content="Todos los comandos disponibles para jugadores en el Servidor de Ixaya.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Servidor de Ixaya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="bosses.html">Jefes</a></li>
+        <li class="nav-item"><a class="nav-link" href="mobs.html">Criaturas</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipment.html">Equipamiento</a></li>
+        <li class="nav-item"><a class="nav-link" href="progression.html">Progresion</a></li>
+        <li class="nav-item"><a class="nav-link" href="commands.html">Comandos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Comandos del Servidor</h1>
+    <p class="lead">Todos los comandos disponibles para jugadores.</p>
+  </div>
+</header>
+
+<section class="content-section container">
+  
+  <div class="cmd-group animate-on-scroll">
+    <h3 class="cmd-group-title">Comandos para el Lider del Clan</h3>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan create [Nombre]</span>
+      <span class="cmd-desc">Crea un clan nuevo.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan disband</span>
+      <span class="cmd-desc">Elimina y borra el clan por completo de forma definitiva.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan invite [NombreJugador]</span>
+      <span class="cmd-desc">Invita a un amigo a unirse a tu clan.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan kick [NombreJugador]</span>
+      <span class="cmd-desc">Expulsa a un miembro de tu clan.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan sethome</span>
+      <span class="cmd-desc">Guarda la base del clan (Solo se permite 1 por clan).</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan delhome</span>
+      <span class="cmd-desc">Borra la ubicacion de la base actual.</span>
+    </div>
+  </div>
+
+  <div class="cmd-group animate-on-scroll">
+    <h3 class="cmd-group-title">Comandos para Miembros del Clan</h3>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan join</span>
+      <span class="cmd-desc">Acepta la invitacion para entrar al clan.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan leave</span>
+      <span class="cmd-desc">Abandona el clan actual por cuenta propia.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan home</span>
+      <span class="cmd-desc">Te teletransporta directo a la base compartida del clan.</span>
+    </div>
+  </div>
+
+  <div class="cmd-group animate-on-scroll">
+    <h3 class="cmd-group-title">Comandos Generales de Clan</h3>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan info</span>
+      <span class="cmd-desc">Muestra los datos de tu clan (lider, miembros y quien esta online).</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan list</span>
+      <span class="cmd-desc">Muestra una lista de todos los clanes creados en el servidor.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/clan pvp</span>
+      <span class="cmd-desc">Activa o desactiva el fuego amigo (dano entre miembros del mismo clan).</span>
+    </div>
+  </div>
+
+  <div class="cmd-group animate-on-scroll">
+    <h3 class="cmd-group-title">Comandos de Utilidad</h3>
+    <div class="cmd-item">
+      <span class="cmd-code">/tpa [nombre]</span>
+      <span class="cmd-desc">Envia una solicitud para teletransportarse hacia otro jugador.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/tpaccept</span>
+      <span class="cmd-desc">Acepta la solicitud de teletransporte de alguien.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/tpacancel</span>
+      <span class="cmd-desc">Rechaza la solicitud de teletransporte.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/sethome [nombre]</span>
+      <span class="cmd-desc">Guarda el lugar donde estas como tu casa o base (maximo 3).</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/home [nombre]</span>
+      <span class="cmd-desc">Te teletransporta a la casa que guardaste.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/delhome [nombre]</span>
+      <span class="cmd-desc">Borra una casa guardada.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/spawn</span>
+      <span class="cmd-desc">Te lleva al spawn.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/skin [nombre]</span>
+      <span class="cmd-desc">Te pone la skin de cualquier jugador premium de Minecraft.</span>
+    </div>
+    <div class="cmd-item">
+      <span class="cmd-code">/skin clear</span>
+      <span class="cmd-desc">Borra la skin que te pusiste y regresa la que venia por defecto.</span>
+    </div>
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="footer-title">Servidor de Ixaya</h5>
+        <p class="footer-text">Tu aventura comienza aqui.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 style="color: var(--text-secondary); font-weight: 600; margin-bottom: 0.75rem;">Navegacion</h6>
+        <ul class="footer-links">
+          <li><a href="bosses.html">Jefes</a></li>
+          <li><a href="mobs.html">Criaturas</a></li>
+          <li><a href="equipment.html">Equipamiento</a></li>
+          <li><a href="progression.html">Progresion</a></li>
+          <li><a href="commands.html">Comandos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <p class="footer-text">Java: ca2.holy.gg:26167</p>
+        <p class="footer-text">Bedrock: ca2.holy.gg | Puerto: 26167</p>
+        <p class="footer-text" style="margin-top: 0.5rem;">Version 26.1.2</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-bottom text-center">2026 Servidor de Ixaya. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
